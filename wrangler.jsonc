@@ -4,11 +4,11 @@
 
   // Sirve archivos estáticos desde esta carpeta
   "assets": {
-    "directory": "./out"
+    "directory": "./out/"
   },
 
-  // No publicar en workers.dev (solo dominio propio si lo configuras)
-  "workers_dev": false,
+  // Poner esto en false cuando se vaya a producción, para usar un dominio personalizado
+  "workers_dev": true,
 
   // Desactivar preview URLs
   "preview_urls": false
