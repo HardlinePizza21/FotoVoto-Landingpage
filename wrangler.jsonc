@@ -1,14 +1,23 @@
 {
-    "name": "fotovototest",
-    "main": "dist/worker.js",
-    "compatibility_date": "2026-02-15",
-    "workers_dev": false,
-    "preview_urls": false,
-    // Para asociar el worker a un dominio personalizado, se debe configurar la sección "routes" con el patrón del dominio y el nombre de la zona.
-    // "routes": [
-    //     {
-    //         "pattern": "midominio.com/*",
-    //         "zone_name": "midominio.com"
-    //     }
-    // ]
+  "name": "fotovototest",
+  "compatibility_date": "2026-02-15",
+
+  // Sirve archivos estáticos desde esta carpeta
+  "assets": {
+    "directory": "./out"
+  },
+
+  // No publicar en workers.dev (solo dominio propio si lo configuras)
+  "workers_dev": false,
+
+  // Desactivar preview URLs
+  "preview_urls": false
+
+  // Si más adelante quieres dominio personalizado:
+  // "routes": [
+  //   {
+  //     "pattern": "midominio.com/*",
+  //     "zone_name": "midominio.com"
+  //   }
+  // ]
 }
