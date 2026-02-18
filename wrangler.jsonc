@@ -1,23 +1,19 @@
 {
   "name": "fotovototest",
   "compatibility_date": "2026-02-15",
-
   // Sirve archivos estáticos desde esta carpeta
   "assets": {
     "directory": "./out/"
   },
-
   // Poner esto en false cuando se vaya a producción, para usar un dominio personalizado
-  "workers_dev": true,
-
+  "workers_dev": false,
   // Desactivar preview URLs
-  "preview_urls": false
-
+  "preview_urls": false,
   // Si más adelante quieres dominio personalizado:
-  // "routes": [
-  //   {
-  //     "pattern": "midominio.com/*",
-  //     "zone_name": "midominio.com"
-  //   }
-  // ]
+  "routes": [
+    {
+      "pattern": "fotovoto.app/*",
+      "zone_name": "fotovoto.app"
+    }
+  ]
 }
