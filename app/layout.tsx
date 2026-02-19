@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${montserrat.variable} antialiased flex flex-col min-h-dvh`}
+        className={`${openSans.variable} ${montserrat.variable} antialiased flex flex-col min-h-dvh pb-10`}
       >
         {children}
         <Footer />
