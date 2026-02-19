@@ -165,7 +165,7 @@ export default function Home() {
           <p className="max-w-md leading-8 text-gray-letters text-xs md:text-lg font-bold tracking-[0.35px] mb-4 md:mb-7">
             WHERE THE WORLD VOTE TOGETHER
           </p>
-          <h1 className="text-4xl md:text-6xl font-montserrat font-bold tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-['Montserrat'] font-bold tracking-tight">
             <span className="block text-white">Which is better.</span>
             <span className="block mt-4 text-orange-letters">Which is worse.</span>
           </h1>

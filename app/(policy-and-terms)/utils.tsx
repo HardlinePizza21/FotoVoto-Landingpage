@@ -27,12 +27,16 @@ function HighlightedBox({
     title,
     children,
 }: {
-    title: string;
+    title?: string;
     children: React.ReactNode;
 }) {
     return (
         <div className="bg-orange-500/5 border-l-4 border-orange-500 p-5 rounded-xl space-y-4">
-            <h3 className="font-semibold text-white">{title}</h3>
+            {
+                title && (
+                    <h3 className="font-semibold text-white">{title}</h3>
+                )
+            }
             {children}
         </div>
     );

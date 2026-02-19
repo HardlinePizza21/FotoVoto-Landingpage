@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BackgroundBlobs, PolicySection, HighlightedBox } from "../utils";
 export default function TermsAndConditions() {
     return (
@@ -7,7 +8,13 @@ export default function TermsAndConditions() {
             <BackgroundBlobs />
 
             <header className="w-full border-b border-gray-700 px-6 md:px-24 py-5">
-                <img src="/icon_logo.svg" alt="FotoVoto Logo" className="h-10 w-auto" />
+                <Link href="/" className="inline-block">
+                    <img
+                        src="/icon_logo.svg"
+                        alt="FotoVoto Logo"
+                        className="h-10 w-auto"
+                    />
+                </Link>
             </header>
 
             <main className="max-w-5xl mx-auto px-6 md:px-24 py-16 space-y-16">
@@ -57,7 +64,7 @@ export default function TermsAndConditions() {
                         You agree not to engage in any of the following prohibited activities:
                     </p>
 
-                    <HighlightedBox title="Reglas de uso">
+                    <HighlightedBox>
                         <ul className="space-y-2 text-white text-sm">
                             {/* Usamos flex y items-center para alinear la imagen y el texto */}
                             <li className="flex items-center">

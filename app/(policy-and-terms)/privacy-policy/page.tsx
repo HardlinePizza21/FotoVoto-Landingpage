@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BackgroundBlobs, PolicySection, HighlightedBox } from "../utils";
 export default function PrivacyPolicy() {
     return (
@@ -6,7 +7,13 @@ export default function PrivacyPolicy() {
             <BackgroundBlobs />
 
             <header className="w-full border-b border-gray-700 px-6 md:px-24 py-5">
-                <img src="/icon_logo.svg" alt="FotoVoto Logo" className="h-10 w-auto" />
+                <Link href="/" className="inline-block">
+                    <img
+                        src="/icon_logo.svg"
+                        alt="FotoVoto Logo"
+                        className="h-10 w-auto"
+                    />
+                </Link>
             </header>
 
             <main className="max-w-4xl mx-auto px-6 md:px-8 py-16 space-y-16">
